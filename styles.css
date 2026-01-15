@@ -26,6 +26,28 @@ body {
   border-radius: 20%;
 }
 
+#start-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Press Start 2P', cursive;
+  background-color: whitesmoke;
+  opacity: 80%;
+  cursor: pointer;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  width: 180px;
+  height: 80px;
+  border-radius: 20px;
+}
+
+#start-btn:hover{
+  background-color: grey;
+  color: whitesmoke
+}
+
 #toggle-btn-sound{
   margin-top: 50px;
   font-size: 50px;
