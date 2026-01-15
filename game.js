@@ -6,7 +6,7 @@ var level = 0;
 var started = false;
 var onSound = true;
 
-$(document).on("keypress", function(){
+$("#start-btn").on("click", function(){
     
     if(!started) {
         nextSequence();
