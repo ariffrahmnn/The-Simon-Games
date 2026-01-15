@@ -87,7 +87,7 @@ function checkAnswer(currentLevel) {
         }
     
     } else {
-        $("#level-title").text("Game Over!, Press any key to play again!");
+        $("#level-title").text("Game Over!, Press start button to try again!");
         $("body").addClass("game-over");
         
         setTimeout(function(){
