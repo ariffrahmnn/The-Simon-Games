@@ -1,17 +1,20 @@
 var gamePattern = [];
 var userClickedPattern = [];
 var buttonColor = ["red", "blue", "green", "yellow"];
-var organizedButton = $(".btn").css("cursor", "pointer");
 var level = 0;
 var started = false;
 var onSound = true;
 
-$("#start-btn").on("click", function(){
+var organizedButton = $(".btn").css("cursor", "pointer");
+var startButton = $("#start-btn")
+
+startButton.on("click", function(){
     
     if(!started) {
         nextSequence();
         started = true;
     }
+    startButton.hide();
 
 });        
 
@@ -98,11 +101,14 @@ function checkAnswer(currentLevel) {
         var gameOver = new Audio("sounds/wrong.mp3");
         gameOver.play();
         gameOver.volume = 0.5;
-
+        
         gamePattern = [];
         userClickedPattern = [];
         level = 0;
         started = false;
+
+
+        startButton.show()
     }
 }
 
